@@ -1,0 +1,300 @@
+.App {
+  margin: 0;
+  padding: 3% 10%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  background: #f5f6fa;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.links-desktop {
+  text-decoration: none;
+  color: rgb(88, 85, 85);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.links-desktop:hover {
+  color: rgb(253, 195, 6);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-hamburger {
+  display: none;
+  color: #000;
+  font-size: 24px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 2px solid #adaaaa;
+  padding-left: 10px;
+  position: relative;
+}
+
+.navbar h1 {
+  color: #0290ff;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-left: -400px;
+}
+
+.navbar-menu li {
+  text-decoration: none;
+  margin-left: 50px;
+  font-size: 1rem;
+}
+
+.books-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section1 p.fiction {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.book-item {
+  margin: 20px 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.book-item:hover {
+  border: 1px solid lightblue;
+}
+
+.section1 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section1 h2 {
+  margin: 0 13px;
+}
+
+.section1 p {
+  margin: 0 13px;
+  padding-top: 10px;
+  color: #4386bf;
+}
+
+.bookform button {
+  width: 15%;
+  background: white;
+  height: 2.3rem;
+  border-radius: 5px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0290ff;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.book-button-section {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.book-button-section button {
+  outline: none;
+  border: none;
+  background-color: unset;
+  margin-left: -2px;
+  border-right: 3px solid #e8e8e8;
+  padding: 4px 16px;
+  color: #4386bf;
+  cursor: pointer;
+}
+
+.section3 button {
+  background-color: #0290ff;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  padding: 5px 25px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.book-button-section button:last-child {
+  border-right: none;
+}
+
+.book-button-section button:hover {
+  color: #0290ff;
+}
+
+.section2 {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 3px solid #e8e8e8;
+  padding: 4px 40px;
+}
+
+.progress-bar {
+  width: 50%;
+}
+
+.section2 h2 {
+  margin: 0;
+}
+
+.section3 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section3 p {
+  color: #d3d3d3;
+  margin-top: 0;
+}
+
+.section3 h3 {
+  margin: 0;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  margin: 8px 1px 29px 0;
+  border: solid 1px #dbdbdb;
+}
+
+.AddBook h2 {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888;
+}
+
+.bookform {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bookTitle {
+  width: 55%;
+  border: solid 1px #e8e8e8;
+  height: 2.3rem;
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding-left: 8px;
+}
+
+.authorName {
+  width: 25%;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  height: 2.3rem;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding-left: 8px;
+}
+
+.profile-icon {
+  color: #0290ff;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    padding: 5%;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #272a31;
+    z-index: 9;
+    opacity: 0.8;
+    transition: opacity 2s, visibility 2s;
+  }
+
+  .mobile-hamburger {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .close-button {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 2%;
+  }
+
+  .mobile-menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu li {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .links-mobile {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .bookform {
+    display: flex;
+    flex-direction: column;
+  }
+}
